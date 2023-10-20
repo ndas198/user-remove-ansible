@@ -59,4 +59,4 @@
         src: /var/home.tar.gz
         dest: /home/ubuntu
         mode: pull
-      delegate_to: ubuntu@"{{ master }}"
+      delegate_to: ubuntu@{{ master }}
