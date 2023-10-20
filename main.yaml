@@ -60,3 +60,7 @@
         dest: /home/ubuntu
         mode: pull
       delegate_to: ubuntu@{{ master }}
+    - name: Delete backup file
+      file:
+        path: '/var/home.tar.gz'
+        state: absent
